@@ -23,7 +23,7 @@ pipeline {
         }
         stage('Deploy') {
             agent {
-                label 'tester'
+                label 'production'
             }
             steps {
                 sh '''
